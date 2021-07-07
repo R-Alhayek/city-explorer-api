@@ -11,7 +11,7 @@ Biulding an API backend express server to connectg it with React client as a fro
 Creating a basic express server.
 
 ## Architecture
-Using JavaScript, dotenv, express, and Cors.
+Using JavaScript, dotenv, express, axios, and Cors.
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
@@ -30,6 +30,16 @@ Estimate of time needed to complete: 5 hours
 
 Start time: 8pm
 
-Finish time: not yet
+Finish time: Wednesday 10pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 2 days
+..............................
+Name of feature: #1: LAB 8
+
+Estimate of time needed to complete: 5 hours
+
+Start time: Wednesday 10pm
+
+Finish time: Tuesday 1 am
+
+Actual time needed to complete: nearly 24 hours
