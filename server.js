@@ -3,6 +3,7 @@
 const express = require('express');
 require('dotenv').config();
 const cors = require('cors');
+const axios = require('axios');
 
 
 const weatherData = require('./data/weather.json');
@@ -10,6 +11,7 @@ const weatherData = require('./data/weather.json');
 const server = express();
 
 const PORT = process.env.PORT;
+const MOVIES_API_KEY = process.env.MOVIES_API_KEY;
 
 server.use(cors());
 
@@ -46,16 +48,6 @@ class Forcast {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
