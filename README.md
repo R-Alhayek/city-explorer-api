@@ -34,6 +34,7 @@ Finish time: Wednesday 10pm
 
 Actual time needed to complete: 2 days
 ..............................
+
 Name of feature: #1: LAB 8
 
 Estimate of time needed to complete: 5 hours
@@ -43,3 +44,14 @@ Start time: Wednesday 10pm
 Finish time: Tuesday 1 am
 
 Actual time needed to complete: nearly 24 hours
+.............................
+
+Name of feature: #1: LAB 9
+
+Estimate of time needed to complete: 2 hours
+
+Start time: Thursday 4 pm
+
+Finish time: Thursday 5 pm
+
+Actual time needed to complete: 1 hour
