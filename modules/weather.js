@@ -31,3 +31,4 @@ class Forcast {
     }
 }
 
+module.exports = forcastHandler;

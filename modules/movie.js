@@ -1,30 +1,41 @@
 'use strict'
 
 const axios = require('axios');
+
 module.exports = moviesHandler;
 
-function moviesHandler(request,response) {
+let inMemory = require('./inMemory');
+
+function moviesHandler(request, response) {
     const sQuery = request.query.city
 
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIES_API_KEY}&query=${sQuery}`
 
-    axios
-    .get(url)
-    .then(moviesData =>{
-        console.log(moviesData.data.results[0].title);
-        response.status(200).send(moviesData.data.results.map( movie =>{
-            return new Movie(movie)
+    if (inMemory[sQuery] !== undefined) {
+        response.send(inMemory[sQuery]);
 
-        }))
-    })
-    .catch (error => {
-        response.status(500).send(error)
+    } else {
+        axios
+            .get(url)
+            .then(moviesData => {
+                console.log(moviesData.data.results[0].title);
+                response.status(200).send(moviesData.data.results.map(movie => {
+                    return new Movie(movie)
 
-    })
+                }))
+            })
+            .catch(error => {
+                response.status(500).send(error)
+
+            })
+    }
+
 }
 
+
+
 class Movie {
-    constructor(movie){
+    constructor(movie) {
         this.title = movie.original_title;
         this.overview = movie.overview;
         this.average_votes = movie.vote_average;
@@ -35,3 +46,6 @@ class Movie {
 
     }
 }
+
+
+module.exports = moviesHandler;

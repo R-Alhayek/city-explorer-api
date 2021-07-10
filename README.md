@@ -55,3 +55,13 @@ Start time: Thursday 4 pm
 Finish time: Thursday 5 pm
 
 Actual time needed to complete: 1 hour
+..............................
+Name of feature: #1: LAB 10
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 3 pm
+
+Finish time: 4 pm
+
+Actual time needed to complete: 1 hour
